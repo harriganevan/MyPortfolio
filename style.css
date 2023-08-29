@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@200;300&display=swap');
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.849);
+  --spacing: 40vh;
+
+  font-family: sans-serif;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+#lines{
+  position: absolute;
+  width: 100%;
+}
+
+#fixed-header {
+  z-index: 99;
+  position: fixed;
+  width: 100vw;
+  height: 7vh;
+  background-color: rgba(15, 15, 15, 0.459);
+
+  display: flex;
+}
+
+#initials {
+  font-family: serif;
+  font-size: 4vh;
+
+  margin: 1vh 0vw 0vh 1.5vw;
+}
+
+#github-container {
+  margin-left: auto;
+  margin-top: 1vh;
+  height: 70%;
+}
+
+#linkedin-container {
+  height: 70%;
+  margin: 1vh 2.5vw 0vh 1vw;
+}
+
+h1, h2, h3, blockquote {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 3.5vw;
+  padding: 2vh 0vw 5vh 8vw;
+  margin-bottom: 50vh;
+  margin-top: 15vh;
+}
+
+#scroll {
+  position: absolute;
+  top: 85vh;
+  left: 43.5vw;
+  font-size: 1.5vw;
+}
+
+#scrollDown {
+  position: absolute;
+  left: 38%;
+  top: 140%;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s .75s, opacity .75s linear;
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+section {
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing);
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 25px;
+  outline: solid white;
+}
+
+.split {
+  display: flex;
+}
+
+.aboutTitle {
+  margin-bottom: 0;
+}
+
+#me {
+  font-size: 13vw;
+  flex: 50%;
+  text-align: center;
+  margin-top: 0;
+}
+
+#meRight {
+  font-size: 1.4vw;
+  flex: 50%;
+}
+
+#projectGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.projectTitle {
+  text-align: center;
+  position: relative;
+  font-size: 1.4vw;
+}
+
+#projectIntro {
+  text-align: center;
+  font-size: 1vw;
+}
+
+.githubProjectLink {
+  position: absolute;
+  left: 85%;
+  margin-top: -2%;
+}
+
+.projectImage {
+  margin: 1vw;
+  overflow: hidden;
+}
+
+.projectDescription {
+  margin: 0 auto;
+  margin-bottom: 3vh;
+  width: 26.5vw;
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+.projectTech {
+  margin: 1vh;
+  text-align: center;
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+#project1 {
+  outline: 1px solid white;
+  grid-column: 1 / 3;
+  margin: 1vw;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #0000008c;
+  transition: all 700ms;
+}
+#project2 {
+  outline: 1px solid white;
+  grid-column: 3 / 5;
+  margin: 1vw;
+  background-color: #0000008c;
+  transition: all 700ms;
+}
+#project3 {
+  outline: 1px solid white;
+  grid-column: 5 / 7;
+  margin: 1vw;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #0000008c;
+  transition: all 700ms;
+}
+
+#project1:hover {
+  box-shadow: 0 0 10px 5px #8030a0;
+  margin: 0vw;
+}
+#project2:hover {
+  box-shadow: 0 0 10px 5px #3064a0;
+  margin: 0vw;
+}
+#project3:hover {
+  box-shadow: 0 0 10px 5px #ffffff;
+  margin: 0vw;
+}
+
+#earthContainer {
+  position: relative;
+  margin-top: 72vh;
+}
+
+#skills {
+  position: absolute;
+  width: 92.5%;
+  background-color: #0000003a;
+
+  top: -10%;
+  z-index: 99;
+}
+
+.skillsText {
+  text-align: center;
+  margin: 5vh;
+}
+
+#skillsLogos {
+  display: flex;
+  margin-left: 3%;
+  flex-wrap: wrap;
+  column-gap: 12%;
+  row-gap: 5vh;
+}
+
+#more {
+  z-index: 99;
+  position: absolute;
+  margin-top: 10%;
+  width: 92.5%;
+  background-color: #0000003a;
+}
+
+#moreMe {
+  font-size: 1.3vw;
+  flex: 50%;
+}
+
+#meClosed {
+  font-size: 15vw;
+  flex: 50%;
+  text-align: center;
+  margin-top: 0;
+}
+
+#sunset {
+  height: 90vh;
+  background: linear-gradient(to bottom, #000000, #240024, #007da7);
+}
+
+.cloud {
+  height: 30vh;
+  position: absolute;
+  width: 60vh;
+  z-index: 0;
+}
+
+.c1 {
+  animation: animateCloud 35s linear infinite;
+  transform: scale(0.65);
+  position: absolute;
+  top: 20%;
+}
+
+.c2 {
+  animation: animateCloud 20s linear infinite;
+  transform: scale(0.3);
+  position: absolute;
+  top: 25%;
+}
+
+.c3 {
+  animation: animateCloud 30s linear infinite;
+  transform: scale(0.5);
+  position: absolute;
+  top: 25%;
+}
+
+.c4 {
+  animation: animateCloud 18s linear infinite;
+  transform: scale(0.4);
+  position: absolute;
+  top: 20%;
+}
+
+.c5 {
+  animation: animateCloud 25s linear infinite;
+  transform: scale(0.55);
+  position: absolute;
+  top: 30%;
+}
+
+@keyframes animateCloud {
+  0% {
+      margin-left: -1000px;
+  }
+  100% {
+      margin-left: 100%;
+  }
+}
+
+#mountain{
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('imgs/mountain.svg');
+}
+
+#fadeToWhite {
+  height: 50vh;
+  background: linear-gradient(to bottom, #9a1300, #ffffff);
+}
+
+#white {
+  height: 30vh;
+  background-color: white;
+  position: relative;
+}
+
+#email {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 50vw;
+}
+
+label {
+  color: black;
+  display: inline-block;
+  clear: left;
+  width: 20%;
+  text-align: right;
+  margin-bottom: 3vh;
+  
+}
+input {
+  margin-left: 5%;
+  padding: 1vh 10px;
+  width: 55%;
+  outline: none;
+  transition: 0.5s;
+  border: 3px solid #ccc;
+}
+input:focus {
+  border: 3px solid #555;
+}
+
+textarea {
+  margin-left: 5%;
+  padding: 1vh 10px;
+  width: 55%;
+  outline: none;
+  transition: 0.5s;
+  border: 3px solid #ccc;
+  resize: none;
+  vertical-align: top;
+}
+textarea:focus {
+  border: 3px solid #555;
+}
+
+#messagebox {
+  height: 20vh;
+}
+
+#contact {
+  margin-bottom: 5%;
+  margin-left: 26%;
+}
+
+#button {
+  margin-top: 5%;
+  margin-left: 26%;
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#thanks {
+  margin-left: 12%;
+  display: inline-block;
+  color: black;
+  display: none;
+  transition: opacity 2s;
+}
+
+#stick {
+  position: absolute;
+  height: 20vh;
+  bottom: 0;
+  right: 20vw;
+}
