@@ -46,7 +46,7 @@ function moveMoon(t) {
 }
 
 function move() {
-    var t = document.body.getBoundingClientRect().top * (931/window.innerHeight);
+    var t = document.body.getBoundingClientRect().top;
     camera.position.y = t * 0.2;
     moon.position.y = t * 0.2; //same as camera drop
     if(t < -500){ //change this to adjust when moon first appears
