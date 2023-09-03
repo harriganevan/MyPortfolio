@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@200;300&display=swap');
 
 :root {
-  --dark-bg: rgba(15, 15, 15, 0.849);
-  --spacing: 350px;
-
   font-family: sans-serif;
 }
 
@@ -39,14 +36,12 @@ main {
   width: 100vw;
   height: 65px;
   background-color: rgba(15, 15, 15, 0.459);
-
   display: flex;
 }
 
 #initials {
   font-family: serif;
   font-size: 2.5em;
-
   margin: 8px 0 0 1.5vw;
 }
 
@@ -204,8 +199,6 @@ section {
   border-radius: 0px 15px 15px 0px;
 }
 
-
-
 #project1:hover {
   box-shadow: 0 0 10px 5px #8030a0;
   margin: 0vw;
@@ -221,7 +214,6 @@ section {
 
 #earthContainer {
   position: relative;
-  /* margin-top: 685px; */
 }
 
 #skills {
