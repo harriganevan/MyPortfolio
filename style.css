@@ -56,19 +56,25 @@ main {
   margin: 8px 2.5vw 0 1vw;
 }
 
-h1, h2, h3, blockquote {
+h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
+h2 {
+  font-size: 2em;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
 header {
   background-color: rgba(0, 0, 0, 0);
-  font-size: 3.5vw;
+  font-size: 4em;
   padding: 20px 0vw 50px 8vw;
   margin-bottom: 350px;
   margin-top: 135px; /*make it fixed in js*/
-  
 }
 
 #scroll {
@@ -112,7 +118,9 @@ section {
 }
 
 .aboutTitle {
-  margin-bottom: 0;
+  /* margin-bottom: 0;
+  margin-top: 5px;
+  margin-left: 10px; */
 }
 
 .table{
@@ -169,7 +177,7 @@ section {
   margin-bottom: 30px;
   width: 26.5vw;
   text-align: center;
-  font-size: 100%;
+  font-size: 1em;
 }
 
 .projectTech {
@@ -413,6 +421,9 @@ textarea:focus {
 
 @media only screen and (max-width: 768px) {
 
+  header{margin-bottom: 600px;
+         font-size: 3em;}
+
   .split{flex-direction: column;}
 
   #me{font-size: 20vw;}
@@ -425,6 +436,7 @@ textarea:focus {
              margin-bottom: 10px;}
   #project3 {grid-column: 1 / 7;
              border-radius: 0px 0px 15px 15px;}
+
   .projectTitle{font-size: 1em;}
   .projectDescription{width: 80vw;}
 
@@ -432,4 +444,36 @@ textarea:focus {
 
   /* input{width: 70%;}
   textarea{width: 70%;} */
+}
+
+@media only screen and (min-width: 3840px) {
+
+  h2{font-size: 3.5em;}
+
+  #fixed-header{height: 130px;}
+  #initials{font-size: 5.5em;}
+  #github-container{margin-top: 16px;}
+  #linkedin-container{margin-top: 16px;}
+
+  header{margin-bottom: 750px;
+         font-size: 10em;}
+
+  .aboutTitle{font-size: 3.5em;}
+
+  #meRight{font-size: 3em;}
+  
+  #projectIntro{font-size: 2em;}
+
+  .projectDescription{font-size: 2em;}
+
+  .skillsText{font-size: 2em;}
+
+  #moreMe{font-size: 2.4em;}
+
+  #contactMe{font-size: 5em;}
+
+  label{font-size: 2em;}
+
+  #button{font-size: 32px;}
+
 }
