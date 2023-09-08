@@ -105,7 +105,7 @@ section {
   padding: 1rem;
   background: rgba(15, 15, 15, 0.849);
   font-size: 1.25rem;
-  margin-bottom: 350px;
+  margin-bottom: 380px;
   margin-left: 3vw;
   margin-right: 3vw;
   border-radius: 25px;
@@ -114,13 +114,6 @@ section {
 
 .split {
   display: flex;
-  
-}
-
-.aboutTitle {
-  /* margin-bottom: 0;
-  margin-top: 5px;
-  margin-left: 10px; */
 }
 
 .table{
@@ -227,7 +220,7 @@ section {
 #skills {
   position: absolute;
   background-color: #0000003a;
-  top: -10%;
+  top: -270px;
   z-index: 98;
 }
 
