@@ -4,6 +4,23 @@
   font-family: sans-serif;
 }
 
+a {
+  color: white;
+  font-size: 1.5em;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: none;
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -37,23 +54,31 @@ main {
   height: 65px;
   background-color: rgba(15, 15, 15, 0.459);
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #initials {
   font-family: serif;
   font-size: 2.5em;
-  margin: 8px 0 0 1.5vw;
+  margin: 0 0 0 1.5vw;
+  margin-right: auto;
+}
+
+#anchors{
+  display: flex;
+  column-gap: 5vw;
+  padding-left: 3vw;
 }
 
 #github-container {
   margin-left: auto;
-  margin-top: 8px;
   height: 70%;
 }
 
 #linkedin-container {
   height: 70%;
-  margin: 8px 2.5vw 0 1vw;
+  margin: 0 2.5vw 0 1vw;
 }
 
 h1, h2, h3 {
@@ -112,6 +137,10 @@ section {
   outline: solid white;
 }
 
+#about{
+  scroll-margin-top: 250px;
+}
+
 .split {
   display: flex;
 }
@@ -136,6 +165,7 @@ section {
 
 #projects {
   margin-bottom: 650px;
+  scroll-margin-top: 28px;
 }
 
 #projectGrid {
@@ -222,6 +252,7 @@ section {
   background-color: #0000003a;
   top: -270px;
   z-index: 98;
+  scroll-margin-top: 28px;
 }
 
 .skillsText {
@@ -414,6 +445,8 @@ textarea:focus {
 
 @media only screen and (max-width: 768px) {
 
+  a{font-size: 1em;}
+
   header{margin-bottom: 600px;
          font-size: 3em;}
 
@@ -468,5 +501,4 @@ textarea:focus {
   label{font-size: 2em;}
 
   #button{font-size: 32px;}
-
 }
