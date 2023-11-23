@@ -472,6 +472,39 @@ textarea:focus {
   textarea{width: 70%;} */
 }
 
+@media only screen and (min-width: 2560px) {
+
+  a{font-size: 2em;}
+
+  h2{font-size: 2.5em;}
+
+  #fixed-header{height: 80px;}
+  #initials{font-size: 4em;}
+  #github-container{margin-top: 2px;}
+  #linkedin-container{margin-top: 2px;}
+
+  header{margin-bottom: 650px;
+         font-size: 6em;}
+
+  .aboutTitle{font-size: 3.5em;}
+
+  #meRight{font-size: 2em;}
+  
+  #projectIntro{font-size: 1.5em;}
+
+  .projectDescription{font-size: 1.5em;}
+
+  .skillsText{font-size: 2em;}
+
+  #moreMe{font-size: 2em;}
+
+  #contactMe{font-size: 5em;}
+
+  label{font-size: 2em;}
+
+  #button{font-size: 32px;}
+}
+
 @media only screen and (min-width: 3840px) {
 
   a{font-size: 3em;}
