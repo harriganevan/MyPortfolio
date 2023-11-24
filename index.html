@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="imgs/E.png">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
   <title>Evan Harrigan</title>
 </head>
 
@@ -72,11 +73,38 @@
       <h2>Projects</h2>
       <p id="projectIntro">I'm always working on creating new and exciting projects.
         I will continue to create more advanced projects with new
-        technology I learn. You can find more projects, including
-        this website, on my GitHub.
+        technology I learn. You can find more projects on my GitHub.
       </p>
       <div id="projectGrid">
+
         <div class="project" id="project1">
+
+          <h3 class="projectTitle">
+            Trip Planner
+            <a href="https://github.com/harriganevan/tripPlanner" target="_blank" rel="noopener noreferrer"><img class="githubProjectLink" src="imgs/logos/githubLogo.png" alt="githubLogo" width="10%"></a>
+          </h3>
+
+          <div class="projectImage">
+            <img id="stellarImage" src="imgs/projects/trip-planner2.PNG" alt="StellarClassification" width="100%">
+          </div>
+
+          <div class="projectDescription" id="stellarDescription">
+            <p>
+              Trip Planner is a web application that allows users to create and plan trips. The application provides a geographic map and allows users 
+              to search for nearby attractions of their destinations. Users can create an account and save their trips. Accomplished using React, 
+              Express, Node.js, and MongoDB.
+            </p>
+          </div>
+
+          <div class="projectTech">
+            <img src="imgs/logos/react.svg" alt="react" width="15%">
+            <img src="imgs/logos/nodejs-icon.svg" alt="react" width="12%">
+            <img src="imgs/logos/mongodb-icon.svg" alt="react" width="7%">
+            <img class="invert" src="imgs/logos/express.svg" alt="react" width="15%" style="margin-bottom: 4%;">
+          </div>
+        </div>
+
+        <div class="project" id="project2">
 
           <div class="projectHeader">
             <h3 class="projectTitle">
@@ -109,29 +137,7 @@
           </div>
         </div>
 
-        <div class="project" id="project2">
-
-          <h3 class="projectTitle">
-            Stellar Classification
-            <a href="https://github.com/harriganevan/StellarClassification" target="_blank" rel="noopener noreferrer"><img class="githubProjectLink" src="imgs/logos/githubLogo.png" alt="githubLogo" width="10%"></a>
-          </h3>
-
-          <div class="projectImage">
-            <img id="stellarImage" src="imgs/projects/stellarID.png" alt="StellarClassification" width="100%">
-          </div>
-
-          <div class="projectDescription" id="stellarDescription">
-            <p>
-              Stellar Classification is a series of machine learning algorithms applied to astronomical
-              data to classify objects in space as stars, galaxies, or quasars. This project explores neural
-              networks, support vector machines, and random forest classifiers.
-            </p>
-          </div>
-
-          <div class="projectTech">
-            <img src="imgs/logos/python-original.svg" alt="python" width="15%">
-          </div>
-        </div>
+        
 
         <div class="project" id="project3">
 
@@ -184,6 +190,9 @@
           <img src="imgs/logos/mysql-original-wordmark.svg" alt="mysql" width="10%">
           <img src="imgs/logos/c-original.svg" alt="c" width="10%">
           <img src="imgs/logos/github-original-wordmark.svg" alt="c" class="invert" width="10%">
+          <img src="imgs/logos/react.svg" alt="react" width="10%">
+          <img src="imgs/logos/nodejs-icon.svg" alt="node" width="10%">
+          <img src="imgs/logos/mongodb-icon.svg" alt="mongo" width="5%">
         </div>
 
         <p class="skillsText">
@@ -279,5 +288,6 @@
   </main>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script type="module" src="main.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 </body>
 </html>
